@@ -33,8 +33,7 @@ I have over 20 years of professional software development experience in medical
    integration at Landacorp for over 20 years.
  * Lead inventor on 4 patents
 
-I am currently self employed and searching for the next big thing while moving the
-world forward through open source contributions.  I am available for consulting and
-open to new opportunities.
+I left my position as CTO at NucleusHealth in December 2019 to pursue the next big thing.  I
+am currently available for consulting and am open to new opportunities.
 
 You can read more about my background on my [Linkedin profile](https://www.linkedin.com/in/chafey/)
