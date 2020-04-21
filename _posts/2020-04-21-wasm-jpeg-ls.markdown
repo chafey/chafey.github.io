@@ -22,8 +22,8 @@ Decode
 * Google Chrome 81.0: 7.6 ms 
 
 Encode 
-* Native C++ Encode: 5.507 ms
-* NodeJS 14.0.0 Encode: 8.526 ms
+* Native C++: 5.507 ms
+* NodeJS 14.0.0: 8.526 ms
 
 #### JLSL/MG1_JLSL - 3064x4664 16 bit lossless MG Image
 
@@ -37,8 +37,8 @@ Encode:
 * Native C++: 363.734 ms
 * NodeJS 14.0.0: 555.262 ms
 
-
-
 ### Download Size
 * charls-js.js - 68,077 bytes
 * charls-js.wasm - 195,952 bytes
+
+You can try it out yourself [here](https://chafey.github.io/charls-js/test/browser/)

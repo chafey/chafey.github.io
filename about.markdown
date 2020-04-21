@@ -31,7 +31,10 @@ I have over 20 years of professional software development experience in medical
  * Developer of the world's first DICOM RT Import mechanism.
  * Lead architect and developer of an HL7 interface engine which powered enterprise
    integration at Landacorp for over 20 years.
+ * Lead inventor on 4 patents
 
 I am currently self employed and searching for the next big thing while moving the
 world forward through open source contributions.  I am available for consulting and
 open to new opportunities.
+
+You can read more about my background on my [Linkedin profile](https://www.linkedin.com/in/chafey/)
