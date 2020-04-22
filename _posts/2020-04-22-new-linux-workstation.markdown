@@ -20,7 +20,7 @@ detected and just worked.  I used it for a few days and then discovered
 [Pop!_OS](https://system76.com/pop), which was getting rave reviews.  I
 decided to give it a shot and was absolutely blown away.
 
-The installation process was a breeze - it was very clean and easy to do.  
+The installation process was a breeze - it was very clean and easy to do.
 The desktop environment is absolutely amazing - I quickly found that I 
 preferred it over Mac OS X!  I have now been using Pop!_OS full time for
 about two weeks and have decided to go all in and switch from Mac OS X
@@ -51,8 +51,8 @@ have disabled GPU acceleration for video playback.
 
 These issues plus the fact that current hardware is much better lead me to 
 buy a new workstation specifically for Linux.  Today I picked up a new
-Intel i9-9900K liquid cooled system and did a fresh install of Pop!_OS.  
-The liquid cooling keeps the system cool and most importantly - quiet!  
+Intel i9-9900K liquid cooled system and did a fresh install of Pop!_OS.
+The liquid cooling keeps the system cool and most importantly - quiet!
 The i9-9900K is quite fast and the power management works much better - it
 often just runs at 0.8GHz during normal use and instantly jumps up to
 4.9 GHz when it needs to.
@@ -69,9 +69,9 @@ use of the system resources.  In Mac OS X, you have to allocate memory and
 CPU cores for docker to use.  These allocated resources are taken away from
 Mac OS X and all containers have to compete with each other for them.  The
 net effect is that under heavy use, you don't use your system resources 
-optimally and end wasting time.  In Linux, all system memory and CPU is 
+optimally and end up wasting time.  In Linux, all memory and CPU cores are 
 automatically shared between the host OS and all docker containers 
-resulting in maximum productivity.  The other benefit is that shared
+resulting in maximum efficiency.  The other benefit of Docker on LInux is that shared
 volume mounts on Linux run at full speed while they run at a significantly
 [reduced speed on Mac OS X](https://docs.docker.com/docker-for-mac/osxfs-caching/).
 
@@ -79,6 +79,6 @@ The third reason is that the Pop!_OS desktop environment is extremely fast and
 has many hotkeys that help me work quickly.  The Pop!_OS desktop environment 
 is based on Gnome but comes with some great default settings
 
-Overall I am amazed at the state of Linux on the desktop.  The hardware support
-is outstanding and it is just as easy to use as Mac OS X (perhaps even easier).
-If you haven't tried Linux on the desktop recently, give Pop!_OS a shot! 
+Overall I am amazed at the state of Linux on the desktop.  It is easy to install,
+fast, works with most hardware and is easier to use than Mac OS X.  If you 
+haven't tried Linux on the desktop recently, give Pop!_OS a shot! 
