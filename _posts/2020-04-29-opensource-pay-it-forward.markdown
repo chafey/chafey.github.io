@@ -1,9 +1,5 @@
 ---
 layout: post
 title:  "OpenSource"
-date:   2020-04-29 
-categories: wasm dicom compression codec
+date:   2021-04-29 
 ---
-
-Some numbers on the updates to the [CornerstoneJS](https://cornerstonejs.org)
-JPEG-LS codec:
