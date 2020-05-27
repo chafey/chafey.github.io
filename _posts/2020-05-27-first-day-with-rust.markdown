@@ -26,7 +26,7 @@ to extract the raw image frames for each image so I didn't have to pull in a DIC
 dependency to the CODEC.  After I got the initial project up and going with the happy path unit test, I began
 implementing the decoder.
 
-A DICOM RLE image consists of a 64 byte header containging 16 32 bit unsigned integers
+A DICOM RLE image consists of a 64 byte header containing 16 32 bit unsigned integers
 followed by one or more segments of 8 bit RLE encoded data.  For a color RGB image with
 8 bits per channel, there would be three segments, one for each 8 bit color channel.
 For 16 bit grayscale data, there would be two segments, one for the most significant 
@@ -64,10 +64,13 @@ logic is very simple, something like this:
 ```
  
 The n == 128 case is strange to me, I am not sure why it just wasn't folded into one of the
-other two cases.  I started implementing the logic which turned out to be a lot more
-work than I expected.  I was constantly struggling with the compiler about type issues,
+other two cases.  I started implementing the logic which ended up taking much longer
+than I expected.  I was constantly struggling with the compiler about type issues,
 variable naming conventions, unnecessary paranthesis on if conditions and handling all
-possible error paths.  The type issues and possible error paths was expected and 
+possible error paths.  I also ran into several DICOM issues including a bug in the CT1
+reference image (it overflows the output buffer!) and trying to comprehend an extremely
+poorly written [part of the DICOM standard](http://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_G.2.html)
+on how 16 bit pixels are RLE encoded.  The type issues and possible error paths was expected and 
 welcome as these are the keys to Rust making code safe.  
 
 The type issues mainly had to do with the fact that the 'n' value above was read as a
