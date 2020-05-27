@@ -53,7 +53,7 @@ to replicate or inline.
 After the header was parsed, I began writing the RLE codec itself.  The decoding
 logic is very simple, something like this:
 
-``` rust
+```rust
 // read byte from stream into n
 // if n < 127
   // literal run case - copy the next n + 1bytes to output buffer
@@ -78,7 +78,7 @@ u8 (unsigned byte) but had to be interpreted as an i8 (signed byte) and usize
 (platform specific sized unsigned integer used for control loops).  Rust has built in
 support for casting between types that can be done safely via the as operator:
 
-``` rust
+```rust
 // cast an 8 bit unsigned integer to a 16 bit unsigned integer
 let n:u8 = 0; 
 let value = n as u16;
@@ -110,7 +110,7 @@ designed as 0 is a value you might want to parse but is used to indicate an erro
 error occurs, you don't know why - is the number too large for an int?  Is it not a number?
 You can use the Rust Result struct approach in C++ to distinguish between a success and a failure:
 
-``` C++
+```cpp
 // C++ Code
 struct Result {
     int value;
@@ -134,7 +134,7 @@ validation done by the compiler ensures that your program never executes a code 
 you didn't anticipate (or actually, it FORCES you to consider all paths your program could 
 take - including those you may not have been aware of!).  Using the above C++ code as an example:
 
-```C++
+```cpp
 // C++ Code
 void add_num(const char* str) {
     static int accumulator = 0;
