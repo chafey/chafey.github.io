@@ -23,17 +23,12 @@ multiple transfer syntaxes including RLE and Implement Little Endian (uncompress
 I used the [dicomParser](https://github.com/cornerstonejs/dicomParser) DICOM Dump with 
 Data Dictionary [example](https://rawgit.com/cornerstonejs/dicomParser/master/examples/dumpWithDataDictionary/index.html) 
 to extract the raw image frames for each image so I didn't have to pull in a DICOM Parser
-dependency to the CODEC.
-
-After I got the initial project up and going with the happy path unit test, I began
-implementing the decoder.  Initially I decided to pass the encoded bits to the codec
-via a Read stream.  Making the codec be streaming based would probably be more complex,
-but would beneficial in terms of reduced memory footprint and flexibility with regards
-to composition.  
+dependency to the CODEC.  After I got the initial project up and going with the happy path unit test, I began
+implementing the decoder.
 
 A DICOM RLE image consists of a 64 byte header containging 16 32 bit unsigned integers
 followed by one or more segments of 8 bit RLE encoded data.  For a color RGB image with
-8 bits per channel, there would be three segments, one for each 8 bit color channel.  
+8 bits per channel, there would be three segments, one for each 8 bit color channel.
 For 16 bit grayscale data, there would be two segments, one for the most significant 
 byte and one for the least significant byte.
 
