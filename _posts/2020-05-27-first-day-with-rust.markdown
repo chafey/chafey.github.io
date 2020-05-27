@@ -108,9 +108,10 @@ Take the C [atoi()](http://www.cplusplus.com/reference/cstdlib/atoi/) function w
 a string to an integer or returns 0 if it fails to convert.  This interface is poorly 
 designed as 0 is a value you might want to parse but is used to indicate an error.  When an
 error occurs, you don't know why - is the number too large for an int?  Is it not a number?
-You can use the Rust Result struct approach to distinguish between a success and a failure:
+You can use the Rust Result struct approach in C++ to distinguish between a success and a failure:
 
 ``` C++
+// C++ Code
 struct Result {
     int value;
     bool error;
@@ -134,6 +135,7 @@ you didn't anticipate (or actually, it FORCES you to consider all paths your pro
 take - including those you may not have been aware of!).  Using the above C++ code as an example:
 
 ```C++
+// C++ Code
 void add_num(const char* str) {
     static int accumulator = 0;
     accumulator += atoi_improved(str).value; 
